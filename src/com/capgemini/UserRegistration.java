@@ -10,7 +10,7 @@ public class UserRegistration {
 		System.out.println("Welcome to User Registration system");
 		Pattern pattern = Pattern.compile("[A-Z]{1}[a-zA-Z]{2,}");
 		String firstName, lastName, Email, phoneNumber, password;
-
+		
 		while (true) {
 			System.out.println("Enter the first name of user: ");
 			firstName = sc.nextLine();
@@ -57,7 +57,7 @@ public class UserRegistration {
 				System.out.println("Please enter the valid phone number");
 			}
 		}
-		Pattern passwordPattern = Pattern.compile("^[a-zA-Z]*[0-9]+[a-zA-Z0-9]*${8,}");
+		Pattern passwordPattern = Pattern.compile("^[a-zA-Z]*[^W]+[a-zA-Z0-9]*${8,}");
 		while (true) {
 			System.out.println("Enter the password of user: ");
 			password = sc.nextLine();
