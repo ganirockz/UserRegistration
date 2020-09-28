@@ -10,7 +10,7 @@ public class UserRegistration {
 		System.out.println("Welcome to User Registration system");
 		Pattern pattern = Pattern.compile("[A-Z]{1}[a-zA-Z]{2,}");
 		String firstName, lastName, Email, phoneNumber, password;
-		
+
 		while (true) {
 			System.out.println("Enter the first name of user: ");
 			firstName = sc.nextLine();
